@@ -1,0 +1,128 @@
+/* CSS 작성 */
+body {
+  margin: 0px;
+}
+
+.wrap {
+  width: 1020px;
+  height: 1098px;
+  margin: 0px auto 234px;
+}
+
+#coupang {
+  width: 176px;
+  height: 40px;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+
+h2 {
+  margin-top: 8px;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+h2 span:nth-child(2) {
+  margin: 0 10px;
+}
+
+.section_title {
+  font-size: 1.5rem;
+}
+
+.section_subtitle {
+  font-size: 1rem;
+  color: var(--color-gray-600);
+}
+
+button {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  
+  background-color: var(--color-black-20);
+  border: 0;
+  
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  
+  cursor: pointer;
+  font-size: 0.875rem;
+
+  transition-property: all;
+  transition-duration: 150ms;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.container {
+  width: 1020px;
+  height: 958px;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+.container div {
+  border: 1px solid var(--color-gray-500);
+  float: left;
+
+  position: relative;
+}
+
+.big {
+  width: 502px;
+  height: 310px;
+  grid-column: span 2;
+}
+
+.big > a > img {
+  margin: 20px 28px;
+}
+
+.small {
+  width: 243px;
+  height: 310px;
+}
+
+.small > a > img {
+  margin: 14px 22px 14px 21px;
+}
+
+.container div:hover {
+  border: 1px solid var(--color-blue-600);
+}
+
+.container div:focus {
+  border: 1px solid var(--color-blue-600);
+}
+
+.container div:hover button::before {
+  content: '구매하기';
+  color: white;
+}
+
+.container div:focus button::before {
+  content: '구매하기';
+  color: white;
+}
+
+.container div:hover button {
+  background-color: var(--color-blue-600);
+  width: 112px;
+}
+
+.container div:focus button {
+  background-color: var(--color-blue-600);
+  width: 112px;
+}
